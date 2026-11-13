@@ -2,7 +2,7 @@
 
 An insight-led portfolio case study asking whether AI-assisted work creates enough value to justify its token cost.
 
-**[Open the live insight page](https://philo-r76.github.io/Project-Portfolio/)** | [Open the dashboard source](reports/dashboard.html) | [Read the SQL](sql/analysis.sql)
+**[Open the Pages site](https://philo-r76.github.io/Project-Portfolio/)** (after one-time Pages setup) | [Open the dashboard source](reports/dashboard.html) | [Read the SQL](sql/analysis.sql)
 
 The live page includes a recruiter-friendly executive readout and an embedded interactive dashboard. GitHub does not execute standalone HTML inside a repository view; the Pages workflow publishes it as a website.
 
@@ -109,4 +109,4 @@ For a defensible company analysis, join privacy-reviewed provider usage exports 
 
 ## Publishing
 
-The repository includes a GitHub Actions workflow that enables GitHub Pages and publishes the insight page. If repository policy blocks automatic enablement, open **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, and rerun the `Publish portfolio insight page` workflow. The site URL is `https://philo-r76.github.io/Project-Portfolio/`.
+GitHub requires a repository admin to enable Pages once; the Actions token cannot change that repository setting. Open **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, then rerun the `Publish portfolio insight page` workflow. The site URL is `https://philo-r76.github.io/Project-Portfolio/`.
