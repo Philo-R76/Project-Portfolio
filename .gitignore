@@ -1,0 +1,11 @@
+# Local SQLite databases and transient journal files
+*.db
+*.sqlite
+*.sqlite3
+*-journal
+*-wal
+*-shm
+
+# Operating-system metadata
+Thumbs.db
+.DS_Store
