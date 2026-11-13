@@ -1,6 +1,10 @@
 # Token Analytics: Is AI spend paying off?
 
-An end-to-end analytics portfolio project for evaluating the economics of AI-assisted work. It combines event-level token telemetry, SQL-based unit economics, and a standalone interactive dashboard.
+An insight-led portfolio case study asking whether AI-assisted work creates enough value to justify its token cost.
+
+**[Open the live insight page](https://philo-r76.github.io/Project-Portfolio/)** | [Open the dashboard source](reports/dashboard.html) | [Read the SQL](sql/analysis.sql)
+
+The live page includes a recruiter-friendly executive readout and an embedded interactive dashboard. GitHub does not execute standalone HTML inside a repository view; the Pages workflow publishes it as a website.
 
 > **Important:** The included data is entirely synthetic. It is designed to demonstrate an analysis workflow, not to make claims about real companies, real AI products, or actual ROI. Model prices, labor rates, outcomes, and time savings are simulated assumptions.
 
@@ -88,6 +92,8 @@ The generated scenario contains 10,230 tasks, with $5,863.97 in modeled API spen
 
 The decision signal is not "scale AI everywhere." `Nova-Large` has a much higher average cost per task than `Open-Compact` ($1.75 vs. $0.07), while the synthetic success rates are close (79.8% vs. 81.7%). Engineering is the highest-spend department ($1,772.61) and has the lowest department ROI proxy in this scenario (414.1%). This makes model routing and a closer Engineering workflow review sensible **pilot hypotheses**, not proven recommendations: task mix differs by model and team, and the success labels are simulated.
 
+**Business recommendation:** pilot model routing on matched, high-volume workflows; protect quality and rework thresholds; and verify whether reclaimed capacity translates into measurable output or avoided cost before scaling.
+
 For a real pilot, compare matched tasks with and without AI, verify quality and rework, and measure whether time saved is redeployed or converted to cash outcomes. Keep token spend, task success, review effort, and realized business value visible together.
 
 ### Decision guardrails
@@ -100,3 +106,7 @@ For a real pilot, compare matched tasks with and without AI, verify quality and 
 ## Extending with real data
 
 For a defensible company analysis, join privacy-reviewed provider usage exports to task/workflow metadata and outcome measurement. Required fields include timestamp, provider/model, input and output tokens, billed cost, team/workflow, task outcome, baseline time, review/rework time, and an agreed method to value reclaimed capacity. Keep user identifiers pseudonymized and follow company data-retention and access policies.
+
+## Publishing
+
+The repository includes a GitHub Actions workflow for GitHub Pages. If the first deployment reports that Pages is not enabled, open **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, and rerun the `Publish portfolio insight page` workflow. The site URL is `https://philo-r76.github.io/Project-Portfolio/`.
