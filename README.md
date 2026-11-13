@@ -109,4 +109,4 @@ For a defensible company analysis, join privacy-reviewed provider usage exports 
 
 ## Publishing
 
-The repository includes a GitHub Actions workflow for GitHub Pages. If the first deployment reports that Pages is not enabled, open **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, and rerun the `Publish portfolio insight page` workflow. The site URL is `https://philo-r76.github.io/Project-Portfolio/`.
+The repository includes a GitHub Actions workflow that enables GitHub Pages and publishes the insight page. If repository policy blocks automatic enablement, open **Settings → Pages**, choose **GitHub Actions** as the build and deployment source, and rerun the `Publish portfolio insight page` workflow. The site URL is `https://philo-r76.github.io/Project-Portfolio/`.
