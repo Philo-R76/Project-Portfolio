@@ -2,9 +2,7 @@
 
 An insight-led portfolio case study asking whether AI-assisted work creates enough value to justify its token cost.
 
-**[Open the Pages site](https://philo-r76.github.io/Project-Portfolio/)** (after one-time Pages setup) | [Open the dashboard source](reports/dashboard.html) | [Read the SQL](sql/analysis.sql)
-
-The live page includes a recruiter-friendly executive readout and an embedded interactive dashboard. GitHub does not execute standalone HTML inside a repository view; the Pages workflow publishes it as a website.
+[Open the dashboard source](reports/dashboard.html) | [Read the SQL](sql/analysis.sql)
 
 > **Important:** The included data is entirely synthetic. It is designed to demonstrate an analysis workflow, not to make claims about real companies, real AI products, or actual ROI. Model prices, labor rates, outcomes, and time savings are simulated assumptions.
 
