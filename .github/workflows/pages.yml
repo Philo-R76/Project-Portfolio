@@ -1,11 +1,11 @@
-name: Publish portfolio insight page
+name: Publish project portfolio
 
 on:
   push:
     branches: [main]
     paths:
       - 'index.html'
-      - 'reports/**'
+      - 'projects/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -32,7 +32,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html _site/index.html
-          cp reports/dashboard.html _site/dashboard.html
+          cp -R projects _site/projects
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

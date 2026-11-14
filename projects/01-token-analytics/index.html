@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A portfolio case study on AI token spend, task outcomes, and modeled labor value.">
+<title>Token Analytics | AI Spend Insight</title>
+<style>
+:root{color-scheme:light;--ink:#172b4d;--muted:#60708a;--line:#dce4ef;--blue:#276ef1;--teal:#138a72;--paper:#f4f7fb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Segoe UI",Arial,sans-serif}
+main{max-width:1120px;margin:auto;padding:36px 22px 64px}.eyebrow{color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+h1{font-size:clamp(34px,6vw,58px);line-height:1.04;letter-spacing:-.04em;margin:10px 0 16px}h2{font-size:22px;line-height:1.2;margin:0 0 10px}
+p{margin:0 0 15px}.lede{max-width:820px;color:var(--muted);font-size:18px}
+.badge{display:inline-block;border:1px solid #e8c76b;background:#fff7d6;color:#604b0b;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 30px}.button{display:inline-block;padding:10px 15px;border-radius:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:700}.button.secondary{background:#fff;border:1px solid var(--line);color:var(--ink)}
+.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:22px 0}.card,.panel{background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 2px 8px #18385b0a}.card{padding:16px}.label,.muted{color:var(--muted)}.label{font-size:12px;font-weight:700}.value{font-size:25px;font-weight:750;margin:4px 0}.panel{padding:22px;margin:16px 0}.insights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:16px}.insights .panel{margin:0}.tag{color:var(--teal);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.caveat{border-left:4px solid var(--blue);background:#f1f6ff;padding:14px 16px;margin:16px 0}.small{font-size:13px;color:var(--muted)}iframe{width:100%;height:1240px;border:1px solid var(--line);border-radius:10px;background:#fff}.footer{border-top:1px solid var(--line);margin-top:30px;padding-top:18px;font-size:13px;color:var(--muted)}
+@media(max-width:850px){.cards{grid-template-columns:repeat(2,1fr)}.insights{grid-template-columns:1fr}}@media(max-width:480px){main{padding:24px 14px 44px}.cards{gap:9px}.card{padding:12px}.value{font-size:21px}.panel{padding:16px}iframe{height:1500px}}
+</style>
+</head>
+<body>
+<main>
+<div class="eyebrow">Data analytics case study | SQL + unit economics + visualization</div>
+<h1>Is AI spend paying off?</h1>
+<p class="lede">A portfolio analysis of token cost, task outcomes, and the estimated labor capacity value of AI-assisted work. The goal is not to celebrate adoption; it is to identify where a business should test, measure, or rethink its spend.</p>
+<span class="badge">SIMULATED DATA - NOT REAL COMPANY RESULTS</span>
+<div class="actions">
+  <a class="button" href="#dashboard">Explore the interactive dashboard</a>
+  <a class="button secondary" href="sql/analysis.sql">Read the SQL</a>
+  <a class="button secondary" href="README.md">Project methods and reproducibility</a>
+</div>
+<section class="cards" aria-label="Scenario summary">
+  <div class="card"><div class="label">AI-assisted tasks</div><div class="value">10,230</div><div class="small">Six simulated months</div></div>
+  <div class="card"><div class="label">Modeled API spend</div><div class="value">$5,863.97</div><div class="small">Synthetic rate card</div></div>
+  <div class="card"><div class="label">Labor capacity value</div><div class="value">$39,024.01</div><div class="small">After estimated review time</div></div>
+  <div class="card"><div class="label">ROI proxy</div><div class="value">565.5%</div><div class="small">Not financial ROI</div></div>
+  <div class="card"><div class="label">Successful-task rate</div><div class="value">81.3%</div><div class="small">Synthetic outcomes</div></div>
+</section>
+<h2>What the scenario suggests</h2>
+<section class="insights" aria-label="Illustrative insights">
+  <article class="panel">
+    <div class="tag">01 | Model economics</div>
+    <h2>Routing may matter more than raw usage</h2>
+    <p><strong>Open-Compact</strong> costs $0.07 per task versus $1.75 for <strong>Nova-Large</strong> in this simulation. Their simulated success rates are close: 81.7% and 79.8%.</p>
+    <p class="small">Hypothesis only: task mix differs across models. A matched quality-controlled routing pilot is needed before changing production defaults.</p>
+  </article>
+  <article class="panel">
+    <div class="tag">02 | Where to investigate</div>
+    <h2>Engineering has the highest modeled spend</h2>
+    <p>Engineering accounts for $1,772.61 in simulated API spend and has the lowest departmental ROI proxy in this scenario: 414.1%.</p>
+    <p class="small">That makes token-heavy engineering workflows a review priority, not proof that the team is overspending.</p>
+  </article>
+  <article class="panel">
+    <div class="tag">03 | Business interpretation</div>
+    <h2>Capacity value is not cash savings</h2>
+    <p>The 565.5% aggregate result assumes estimated time saved can be valued at a fully loaded labor rate. It does not show that the company avoided cost or earned more revenue.</p>
+    <p class="small">Validate redeployment, output quality, rework, and realized financial outcomes with Finance.</p>
+  </article>
+</section>
+<div class="caveat"><strong>Data integrity note:</strong> Every row, model name, rate, outcome, and time-saving estimate in this demo is synthetic. The scenario demonstrates a method; it is not evidence about real companies or current vendor pricing.</div>
+<section class="panel" id="dashboard">
+  <h2>Interactive dashboard</h2>
+  <p class="small">Explore monthly spend, team and workflow economics, model mix, and task quality. Each measure uses the explicitly labeled synthetic scenario.</p>
+  <iframe src="reports/dashboard.html" title="Interactive AI spend and ROI proxy dashboard" loading="lazy"></iframe>
+</section>
+<section class="panel">
+  <h2>Decision I would recommend</h2>
+  <p>Run a controlled pilot on a narrow set of high-volume workflows. Compare matched AI-assisted and non-AI tasks, track success and rework, calculate billed token cost, and record whether reclaimed time becomes measurable business output. Scale only where quality and realized value hold up.</p>
+  <p class="small">Implementation: SQLite schema and analysis queries, deterministic PowerShell data generation and QA, and a dependency-free HTML dashboard.</p>
+</section>
+<div class="footer">Portfolio demonstration. Replace simulated inputs with privacy-reviewed company telemetry and finance-approved assumptions before making investment decisions.</div>
+</main>
+</body>
+</html>
