@@ -1,0 +1,10 @@
+# Generated source data
+/data/raw/*.csv
+/data/warehouse/
+/data/processed/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
