@@ -41,5 +41,3 @@ projects/
     app.py
     README.md
 ```
-
-Add future projects as separate, numbered folders under `projects/` (for example, `02-project-name/`). Keep each project's documentation and supporting files in its own folder.
