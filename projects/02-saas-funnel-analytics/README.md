@@ -1,6 +1,6 @@
 # SaaS Customer Conversion & Lifecycle Funnel Analytics
 
-**Portfolio project 02** — a fully local analytics engineering project that models how B2B SaaS users move from signup to paid subscription, where they stall, and how conversion and revenue vary by acquisition channel and customer segment. It requires no Microsoft Fabric account or cloud capacity.
+**Portfolio project 02** — a fully local analytics engineering project that models how B2B SaaS users move from signup to paid subscription, where they stall, and how conversion and revenue vary by acquisition channel and customer segment. 
 
 ## Architecture
 
